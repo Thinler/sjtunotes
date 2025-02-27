@@ -5,65 +5,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的笔记</title>
-    <!-- 引入Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 引入Google字体 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #3a7bd5;
+            --secondary-color: #f8f9fa;
+            --text-color: #333;
+            --hover-color: #2d6bca;
+            --shadow-color: rgba(0, 0, 0, 0.05);
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
             max-width: 800px;
-            margin: 20px auto;
-            padding: 10px;
+            margin: 0 auto;
+            padding: 2rem;
             line-height: 1.6;
+            color: var(--text-color);
+            background-color: #fff;
+        }
+
+        .container {
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px var(--shadow-color);
+            background-color: var(--secondary-color);
         }
 
         h1 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 30px;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 1rem;
         }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
+        h1:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-color);
+            border-radius: 3px;
         }
 
-        li {
-            margin: 10px 0;
+        .list-group-item {
+            border: none;
+            background: transparent;
+            padding: 1.2rem 1.5rem;
+            margin-bottom: 0.8rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+
+        .list-group-item:hover {
+            background-color: #fff;
+            box-shadow: 0 5px 15px var(--shadow-color);
+            transform: translateY(-2px);
+            border-left: 4px solid var(--primary-color);
         }
 
         a {
             text-decoration: none;
-            color: #1a73e8;
-            font-weight: bold;
+            color: var(--primary-color);
+            font-weight: 600;
+            transition: color 0.3s ease;
+            display: inline-block;
         }
 
         a:hover {
+            color: var(--hover-color);
+            text-decoration: none;
+        }
+
+        p {
+            margin-top: 0.5rem;
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            margin-top: 3rem;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        footer a {
             text-decoration: underline;
+            font-weight: normal;
+        }
+
+        @media (max-width: 576px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .container {
+                padding: 1.5rem;
+                box-shadow: 0 5px 15px var(--shadow-color);
+            }
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1 class="text-center my-4">我的笔记</h1>
+        <h1 class="text-center">我的笔记</h1>
 
         <ul class="list-group">
-            <li class="list-group-item"><a href="./电力电子技术/课件/电力电子技术.html">电力电子技术笔记</a>
+            <li class="list-group-item">
+                <a href="./电力电子技术/课件/电力电子技术.html">
+                    <i class="fas fa-book-open mr-2"></i>电力电子技术笔记
+                </a>
                 <p>（带pdf跳转版参见<a href="https://share.dyweb.sjtu.cn/course/24589">电力电子技术超全资料（含个人精心双链笔记）</a>）</p>
             </li>
-            <li class="list-group-item"><a href="./机器人学/笔记/机器人学.html">机器人学笔记</a>
+            <li class="list-group-item">
+                <a href="./机器人学/笔记/机器人学.html">
+                    <i class="fas fa-robot mr-2"></i>机器人学笔记
+                </a>
             </li>
-            <li class="list-group-item"><a href="./自动控制原理/自动控制原理.html">自动控制原理（未完待续）</a>
+            <li class="list-group-item">
+                <a href="./自动控制原理/自动控制原理.html">
+                    <i class="fas fa-cogs mr-2"></i>自动控制原理（未完待续）
+                </a>
             </li>
         </ul>
     </div>
-    <footer class="text-center mt-4">
+    <footer class="text-center">
         <p>访问我的个人博客：<a href="https://thinler.github.io" target="_blank">thinler.github.io</a></p>
     </footer>
-    <!-- 引入Bootstrap JS和依赖 -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
