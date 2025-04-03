@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Obsidian_docs]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Obsidian_docs</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 03 Apr 2025 07:23:20 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 03 Apr 2025 07:22:30 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[过程证明]]></title><description><![CDATA[ 
+ <br><br>目标：证明由特征向量  和广义特征向量  构成的向量组是线性无关的。<br>步骤：<br>
+<br>
+假设存在线性相关性<br>
+假设存在一组不全为零的标量 ，使得：
+
+
+<br>
+应用算子  于等式两边<br>
+对式 (1) 两边左乘 ，利用广义特征向量的递推关系：
+
+根据定义：
+
+<br>，
+<br>，
+<br>，
+<br>
+<br>.
+
+代入后得到：
+
+化简后：
+
+
+<br>
+重复应用算子 <br>
+对式 (2) 再次应用 ，得到：
+
+代入递推关系：
+
+化简后：
+
+
+<br>
+迭代消去高阶项<br>
+重复上述过程  次后，最终会得到：
+
+当  时，得到：
+
+由于 ，必有 。
+
+<br>
+逆向回代，所有系数为零<br>
+将  代入式 (2)、(3) 等，逐步回推可得：
+
+这与假设矛盾，因此原向量组线性无关。
+
+<br><br><br>
+<br>
+广义特征空间的分层结构<br>
+对于特征值 ，其广义特征空间是所有满足 （ 为某正整数）的向量  的集合。通过递推构造的广义特征向量  满足：
+
+这意味着每个广义特征向量  属于不同的“层级” ，且层级越高，向量越“远离”原始特征空间。
+
+<br>
+链式结构的线性无关性<br>
+广义特征向量的构造形成一个链式结构：
+
+每个向量  仅能通过前一个向量  生成，且它们处于不同的层级。这种层级关系确保了它们无法通过低层级向量的线性组合表示，从而保证线性无关性。
+
+<br>
+若尔当块的几何意义<br>
+若尔当标准形中的每个若尔当块对应一个广义特征向量链。例如，若尔当块：
+
+对应的向量链  在几何上构成一个三维空间，其中：
+
+<br> 是特征向量，位于特征空间中；
+<br> 和  是广义特征向量，分别位于更高层级的子空间中。
+
+这些子空间的直和构成整个广义特征空间，且每个子空间的基向量（即链中的向量）天然线性无关。
+
+<br><br><br>已知：设  若尔当块矩阵  形式为：<br><br>需证明其矩阵指数为：<br><br>证明步骤<br>
+由于<br><br><br>利用数学归纳法，得到：<br>
+引理：对任意解析函数 ，若尔当块  的矩阵函数满足：<br><br>证明思路（归纳法）：<br>
+<br>基例： 时显然成立。
+<br>归纳假设：假设对  成立。
+<br>归纳步骤：对 ，利用分块矩阵与导数关系递推。
+<br><br>]]></description><link>现代控制理论\过程证明.html</link><guid isPermaLink="false">现代控制理论/过程证明.md</guid><pubDate>Thu, 03 Apr 2025 06:34:39 GMT</pubDate></item><item><title><![CDATA[现代控制理论]]></title><description><![CDATA[ 
+ 
+  ]]></description><link>现代控制理论\现代控制理论.html</link><guid isPermaLink="false">现代控制理论/现代控制理论.canvas</guid><pubDate>Thu, 03 Apr 2025 05:40:52 GMT</pubDate></item><item><title><![CDATA[现代控制理论Chapter2]]></title><description><![CDATA[ 
+ <br><br><br>State Variable： 从系统变量中选出来的，最小线性无关<br>
+需要确保最小性（Smallest），独立性（LI）<br>对于一个系统，选取的State Variable未必unique，但是数目总是相同的<br>
+一般来说，n等于<br>
+<br>描述系统的微分方程（DE）的阶数
+<br>
+<br>系统独立储能单元的个数
+<br> 分母的阶数<br>
+n个彼此独立的状态变量构成一个状态向量，即<br>
+
+<br>状态向量的选取并不唯一，任意选取的两个状态向量为线性非奇异变换关系。<br>
+线性非奇异变换
+<br>设原状态向量为x，新状态向量为$\bar{x}$，存在可逆矩阵P使得：
+$\bar{x} = Px$
+1. 变换矩阵P必须可逆（行列式≠0）
+2. 系统本质特性不变（特征值/稳定性不变）
+3. 只是状态空间的坐标变换
+<br>状态方程:<br><br>其中：<br>
+<br>A: 系统矩阵(n×n)
+<br>B: 输入矩阵(n×p)
+<br>C: 输出矩阵(q×n)  
+<br>D: 直接传递矩阵(q×p)
+<br>A first-order matrix differential equation form:  <br><br><br>将传递函数拆分为若干的表示<br>
+<img alt="PixPin_2025-03-28_15-39-34.png" src="现代控制理论\img\pixpin_2025-03-28_15-39-34.png"><img alt="PixPin_2025-03-28_15-41-48.png" src="现代控制理论\img\pixpin_2025-03-28_15-41-48.png"><br>
+则原系统的方框图可以用若干积分环节重构<br>
+对于每个积分环节，列状态方程，最终整理成矩阵的形式。<br><br>基本步骤： <br>
+<br>根据系统特性选择状态变量（通常选择与储能元件相关的物理量） 
+<br>应用物理定律建立方程（如牛顿定律、基尔霍夫定律等）
+<br>整理为标准状态空间形式
+<br>状态变量选取的数量等于系统中独立储能元件的个数。
+<br>
+<br>机械系统：位移/速度 
+<br>电路系统：电容电压/电感电流
+<br><br>Given a transfer function<br>
+讨论的大小关系<br>
+<br>严格正则系统（m &lt; n）：
+
+<br>可直接转换为状态空间表达式
+<br>
+
+
+<br>正则系统（m = n）：
+
+<br>需先提取常数项：
+<br>
+
+
+<br>非正则系统（m &gt; n）：
+
+<br>物理不可实现
+<br>需先通过长除法降阶：
+<br>
+
+
+<br>考虑微分方程如下，对应传递函数分子为常数，分母为n阶<br>
+选取状态变量如下：<br><br>写成向量矩阵的形式<br>
+<br><br>我们只考虑物理可实现的系统，则任意一个SISO系统可以写成：<br>
+若d不为0，则表示直接从输入到输出，只考虑前边的一部分，将分子和分母拆分为两部分：<br>
+<img alt="PixPin_2025-03-28_16-27-50.png" src="现代控制理论\img\pixpin_2025-03-28_16-27-50.png"><br>第一部分：<br><br><br>第二部分：<br><br><br>选取中间的z为状态变量，则有<br><br>对应状态空间方程<br><br>输出可以写成<br><br><br><br>State-space representation in this form can be called controllable canonical form(可控标准型)<br><br>根据上述结论，由传递函数可以直接写出状态空间方程，进而画出方框图表示：<br>
+<img alt="PixPin_2025-03-28_17-17-42.png" src="现代控制理论\img\pixpin_2025-03-28_17-17-42.png"><br><br>将传递函数分解为串联的形式，即若干项相乘：<br><br> or<br><br><img alt="PixPin_2025-03-28_17-46-51.png" src="现代控制理论\img\pixpin_2025-03-28_17-46-51.png"><br>Example:  可以拆分成三项之乘积，其中<br>
+可以画出系统的模拟结构图<br>
+<img alt="PixPin_2025-03-28_18-04-46.png" src="现代控制理论\img\pixpin_2025-03-28_18-04-46.png"><br>
+把每个积分器的输出作为状态变量，不难写出状态空间表达式<br>
+ 得到的矩阵是一个下三角矩阵（主对角线以上的元素都是0）<br>
+并且主对角线的元素对应三个极点<br><br>将传递函数分解为并联的形式，即若干项相加：<br>无重根情况：<br>
+<br>有重根情况（假设只有一个重根为k重根）：<br>
+留数法可以求解<br><br><br>分子为一次的项对应的u前系数为1，分子为高次的项对应u前系数为0，而A矩阵该行对角线右侧会多一个1。<br>则状态方程可以写为：<br><br><br>矩阵A的形式被称作Jordan normal form.(约当标准型)<br>
+<img alt="PixPin_2025-03-28_18-17-48.png" src="现代控制理论\img\pixpin_2025-03-28_18-17-48.png"><br><br>已知状态空间方程如下，欲得传递函数<br>
+可以对其做拉式变换，不难得到：<br><br>其中<br><br>是指的伴随矩阵，伴随矩阵是余子式矩阵的转置<br>补充说明：<br>
+<br>是矩阵的特征多项式，展开后可得系统的特征方程
+<br>矩阵特征值即为系统极点，满足的解
+<br>伴随矩阵的计算方法：
+
+<br>先计算每个元素的余子式（删除该行该列后的行列式）
+<br>组成余子式矩阵并进行转置
+
+
+<br><br><br>考虑两个系统 <br>
+<br>
+<br>
+<img alt="PixPin_2025-03-29_19-48-31.png" src="现代控制理论\img\pixpin_2025-03-29_19-48-31.png"><br>
+两个系统并联，有<br>
+，<br>
+并联系统的状态空间方程可以写成：<br>
+<br><br>考虑两个系统 <br>
+<img alt="PixPin_2025-03-29_19-52-39.png" src="现代控制理论\img\pixpin_2025-03-29_19-52-39.png"><br>
+两个系统串联，有：<br>
+<br>
+系统的状态空间方程可以写成：<br>
+ Therefore, we have:  注意矩阵乘法的顺序不可颠倒。<br><br>考虑两个系统<br>
+为了简化，我们这里假设D矩阵都为0<br>
+<img alt="PixPin_2025-03-29_19-56-06.png" src="现代控制理论\img\pixpin_2025-03-29_19-56-06.png"><br>
+其中放在反馈通路<br>
+可以得到<br>
+<br>
+系统的状态空间方程：<br>
+<br>求传递函数：<br><br>所以：<br>
+拓展到多输入多输出：<br>
+<img alt="PixPin_2025-03-29_20-12-17.png" src="现代控制理论\img\pixpin_2025-03-29_20-12-17.png"><br>解：由系统方框图写出各输入量和误差之间的关系<br><br>因而开环传递函数矩阵为：<br><br>反馈环节的传递函数矩阵为：<br><br>计算系统的闭环传递函数矩阵：<br><br><br>
+一个系统可以用许多不同的状态空间表达式来表述，状态变量的不同选取，其实是状态变量的一种线性变换或坐标变换。
+<br><br>令<br><br>其中是可逆矩阵<br>
+那么用表示原式：<br><br>其中 线性变换并不改变系统的传递函数，也不改变系统的极点（特征值），但是可以将状态空间方程转化为更便于分析的形式。<br><br>若n个特征值两两相异，则n个特征向量线性无关，于是我们有：<br>对于系统<br>
+设其特征值 为两两相异，并利用它们的特征向量组成变换矩阵<br>
+那么系统的状态方程在变换 下必可化简为如下的对角标准形：<br>
+式中 ，<br>
+如果系统矩阵A具有友阵形式，<br>
+即用直接法写出来的形式，可以取变换矩阵为范德蒙德矩阵<br>
+<br><br>当矩阵A含有相同的特征值时，可以分为两种情况讨论：<br>
+<br>矩阵A有m重特征值，但仍然存在n个线性无关的特征向量，那么矩阵A仍可化为对角标准形。<br>
+Exx: <a data-href="现控例题.md#有重特征值但有n个线性无关的特征向量" href="现代控制理论\现控例题.html#有重特征值但有n个线性无关的特征向量" class="internal-link" target="_self" rel="noopener nofollow">现控例题.md &gt; 有重特征值但有n个线性无关的特征向量</a>
+<br>矩阵A的m重特征值只有一个相应的特征向量，即线性无关的特征向量数少于n，则矩阵A不能对角化，只能化成准对角标准形(Jordan Normal Form)
+<br>给定系统状态方程，设其特征值为  ( 重)， ( 重)，， ( 重)，，则存在可逆变换阵 ，通过引入变换 ，可使状态方程式 (2.5.11) 化为如下的若尔当标准形：<br><br>式中 ，<br><br>称为若尔当块。<br>
+当系统矩阵  具有重特征值，且线性无关的特征向量数少于  时，通常不能通过变换实现状态变量间的完全解耦，若尔当标准形是可能达到的最简耦合形式。
+<br>对于重特征值 ，根据特征向量定义 ，可以得到<br><br>式中， 为与  相对应的特征向量，而  则为与  相对应的广义特征向量，可由下列式子确定：<br>这样的选取保证了线性无关性，可以参考<a data-href="过程证明#数学证明：线性无关性" href="现代控制理论\过程证明.html#数学证明：线性无关性" class="internal-link" target="_self" rel="noopener nofollow">过程证明 &gt; 数学证明：线性无关性</a><br>判断是否存在n个线性无关的特征向量
+代数重数（Algebraic Multiplicity）： 特征方程里某一特征根的重数<br>
+几何重数（Geometric Multiplicity）： 该特征根对应的线性无关特征向量个数= 对应特征空间的维数 = 基础解系中向量的个数  
+计算方法：<br>
+  
+判定条件：  
+
+<br>若对于所有特征值，代数重数 = 几何重数 ⇒ 可对角化  
+<br>若存在特征值的代数重数 &gt; 几何重数 ⇒ 只能化成Jordan标准型  
+
+（其中n为矩阵A的维数）
+<br>Exx: <a data-href="现控例题#m重特征值只有一个相应的特征向量" href="现代控制理论\现控例题.html#m重特征值只有一个相应的特征向量" class="internal-link" target="_self" rel="noopener nofollow">现控例题 &gt; m重特征值只有一个相应的特征向量</a><br><br><br><br>
+<br>Transformation relations:<br>
+, , , 
+<br>Proof:<br><br><br>即证变换前后特征值相同<br>]]></description><link>现代控制理论\现代控制理论chapter2.html</link><guid isPermaLink="false">现代控制理论/现代控制理论Chapter2.md</guid><pubDate>Thu, 03 Apr 2025 02:35:27 GMT</pubDate><enclosure url="现代控制理论\img\pixpin_2025-03-28_15-39-34.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;现代控制理论\img\pixpin_2025-03-28_15-39-34.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[现代控制理论Chapter3]]></title><description><![CDATA[ 
+ <br><br><br>考虑n维线性定常系统状态方程<br>
+系统的响应取决于系统的初始状态和输入<br>
+<br>零输入响应: <br>
+自治方程
+
+
+<br>零初态响应: <br>
+状态方程<br>
+
+<br><img src="blob:\\d762a627-6f53-4ec7-9fbc-de0342b365c8"><br>观察两个方程,零输入响应looks simpler,所以对零输入响应进行分析:<br><br>对进行积分，解得:<br><br>其中在e的指数项出现了矩阵A，我们把这个无穷矩阵级数的收敛式叫做矩阵指数。简化起见令，为了详细研究它的性质，对 泰勒展开，得到<br><br>再对其求导<br>
+这一结论说明矩阵A与其对应的矩阵指数是可以交换的。<br>
+Furthermore, 对于  阶方阵 A 和 B，如果 A 和 B 是可交换的，即  则有 具体证明参见<a data-tooltip-position="top" aria-label="高立群_2017_现代控制理论（第2版）.pdf > page=85" data-href="高立群_2017_现代控制理论（第2版）.pdf#page=85" href="现代控制理论\高立群_2017_现代控制理论（第2版）.pdf#page=85" class="internal-link" target="_self" rel="noopener nofollow">高立群_2017_现代控制理论（第2版）, p.67</a><br>
+The key to solving homogeneous state equations analytically is calculating the matrix exponential function  。<br><br><br>直接计算法，对进行泰勒展开，依次计算每一项，最后再对展开式求和，求和后的矩阵的每一项反向应用泰勒展开，得到最终结果。<br>
+Exx:<a data-href="现控例题#Direct Computation Method of State-transition Matrix" href="现代控制理论\现控例题.html#Direct_Computation_Method_of_State-transition_Matrix" class="internal-link" target="_self" rel="noopener nofollow">现控例题 &gt; Direct Computation Method of State-transition Matrix</a><br>利用这个计算方法，我们可以得到几个特殊的矩阵指数：<br>
+<br>
+当矩阵A为对角矩阵时，也为对角矩阵，且有：
+
+
+<br>
+当矩阵A为一个 的若尔当块，矩阵指数可以写成：
+
+
+<br>证明过程中用到了数学归纳法，具体参见<a data-href="过程证明#若尔当块的矩阵指数 e At 的证明" href="现代控制理论\过程证明.html#若尔当块的矩阵指数_e_At_的证明" class="internal-link" target="_self" rel="noopener nofollow">过程证明 &gt; 若尔当块的矩阵指数 e At 的证明</a> or <a data-tooltip-position="top" aria-label="高立群_2017_现代控制理论（第2版）.pdf > page=86" data-href="高立群_2017_现代控制理论（第2版）.pdf#page=86" href="现代控制理论\高立群_2017_现代控制理论（第2版）.pdf#page=86" class="internal-link" target="_self" rel="noopener nofollow">高立群_2017_现代控制理论（第2版）, p.68</a><br>
+<br>设矩阵是一个有多个若尔当块的若尔当矩阵,即
+<br><br>式中代表若尔当块,则<br><br>式中的形式在上文中已给出。<br>
+<br>若
+
+则有
+
+利用三角函数的Taylor展开即可证明。
+<br><br>
+<br>假设矩阵A可以被对角化为对角矩阵D，即
+
+不难得出<br>
+
+<br>因此，可以表示成：<br><br>Exx:<a data-href="现控例题#Linear Transformation Method of State-transition Matrix" href="现代控制理论\现控例题.html#Linear_Transformation_Method_of_State-transition_Matrix" class="internal-link" target="_self" rel="noopener nofollow">现控例题 &gt; Linear Transformation Method of State-transition Matrix</a><br>
+<br>假设矩阵A可以被化作Jordan Normal Form：
+<br>设的Jordan分解为：<br>
+其中是由若尔当块组成的对角分块矩阵：<br><br>则矩阵指数可表示为：<br><br>其中每个若尔当块的矩阵指数为：<br><br>具体而言，应有如下形式：<br><br>Exx: <a data-href="现控例题#Jordan Form Method of State-transition Matrix" href="现代控制理论\现控例题.html#Jordan_Form_Method_of_State-transition_Matrix" class="internal-link" target="_self" rel="noopener nofollow">现控例题 &gt; Jordan Form Method of State-transition Matrix</a><br><br><br>对方程进行拉式变换，<br>
+Therefore,<br>
+其中<br>
+于是有：<br><br>得到了一种通过拉氏反变换计算的方法<br>
+Exx:<a data-href="现控例题#Laplace Transform Method of State-transition Matrix" href="现代控制理论\现控例题.html#Laplace_Transform_Method_of_State-transition_Matrix" class="internal-link" target="_self" rel="noopener nofollow">现控例题 &gt; Laplace Transform Method of State-transition Matrix</a>]]></description><link>现代控制理论\现代控制理论chapter3.html</link><guid isPermaLink="false">现代控制理论/现代控制理论Chapter3.md</guid><pubDate>Thu, 03 Apr 2025 07:21:21 GMT</pubDate><enclosure url="blob:app:\\obsidian.md\d762a627-6f53-4ec7-9fbc-de0342b365c8" length="0" type="false"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;blob:app:\\obsidian.md\d762a627-6f53-4ec7-9fbc-de0342b365c8&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[现控例题]]></title><description><![CDATA[ 
+ <br><br><br>矩阵  为：<br><br>其特征值为：<br><br>其中有两个重特征值。<br>对应于  的特征向量可由下列方程表示：<br><br>易见， 的秩是 1，它是三维的。因而其基础解系的维数为：<br><br>因此，向量  有两个线性无关解，分别为：<br><br>对应于特征值  的特征向量  可由下列方程求得：<br><br>解得：<br><br>由于对应于重特征值的线性无关的特征向量数等于重特征值数，因此仍然有 3 个线性无关的特征向量。这些特征向量可以构成变换矩阵 ：<br><br>变换后的系统矩阵  为：<br><br><br><br>例 2.5.5 试将下列状态方程化为若尔当标准形：<br><br>(1) 求矩阵  的特征值<br><br>矩阵  有二重特征值  和单特征值 。<br>(2) 求  的特征向量 <br><br>解得：<br><br>(3) 求  的广义特征向量 <br><br>(4) 求  的特征向量 <br><br>(5) 构造变换矩阵并得到标准形<br>变换矩阵：<br><br>转换后系统：<br><br><br><br><br><br><br><br><br><br>Answer: The eigenvalues of a matrix are , so it can be diagonalized.<br>
+Hence,<br>
+<br><br>例 3.2.4 试求下列矩阵  的矩阵指数.<br><br>解 因为<br><br>所以, 矩阵  有二重特征值 , 一重特征值 , 求与之相应的特征向量和广义特征向量, 可得<br><br>所以, 可得变换矩阵<br><br>且得<br><br>由此可得<br><br><br><br><br>Find the state-transition matrix of the following system:<br><br>The initial condition is:<br><br>Try to find the zero-input response of the system.<br>Answer: <br><br><br><br><br>Hence<br><br>]]></description><link>现代控制理论\现控例题.html</link><guid isPermaLink="false">现代控制理论/现控例题.md</guid><pubDate>Thu, 03 Apr 2025 07:08:52 GMT</pubDate></item></channel></rss>

@@ -1,13 +1,27 @@
 {
   "vaultName": "Obsidian_docs",
-  "lastExport": 1732704464162,
+  "lastExport": 1743664950193,
   "pluginVersion": "1.8.01",
-  "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon",
+  "validBodyClasses": "publish css-settings-manager theme-light show-inline-title show-ribbon Ribbon-autohide colorful-folder outline-enhanced immersive-canvas mod-left-split-background-primary-light mod-right-split-background-primary-light mod-root-split-background-primary-light background-underlying-default-light activated-file-default-light card-layout-open-dark theme-dark-background-darker mod-left-split-background-transparent-dark mod-right-split-background-transparent-dark mod-root-split-background-CSS-dark background-underlying-default-dark card-highlight-dark line-hover-indicator h1-divider-on h1-color-designated h2-color-designated h3-color-designated h4-color-designated h5-color-designated h6-color-designated text-align-justify codeblock-style-customize callout-style-customize card-layout-pad-open colorful-checkbox",
   "useCustomHeadContent": false,
   "useCustomFavicon": false,
   "files": [
-    "机器人学/笔记/机器人学.md",
-    "机器人学/笔记/img/pasted-image-20241126113147.png",
+    "现代控制理论/过程证明.md",
+    "现代控制理论/现代控制理论.canvas",
+    "现代控制理论/现代控制理论Chapter2.md",
+    "现代控制理论/现代控制理论Chapter3.md",
+    "现代控制理论/现控例题.md",
+    "现代控制理论/img/pixpin_2025-03-28_15-39-34.png",
+    "现代控制理论/img/pixpin_2025-03-28_15-41-48.png",
+    "现代控制理论/img/pixpin_2025-03-28_16-27-50.png",
+    "现代控制理论/img/pixpin_2025-03-28_17-17-42.png",
+    "现代控制理论/img/pixpin_2025-03-28_17-46-51.png",
+    "现代控制理论/img/pixpin_2025-03-28_18-04-46.png",
+    "现代控制理论/img/pixpin_2025-03-28_18-17-48.png",
+    "现代控制理论/img/pixpin_2025-03-29_19-48-31.png",
+    "现代控制理论/img/pixpin_2025-03-29_19-52-39.png",
+    "现代控制理论/img/pixpin_2025-03-29_19-56-06.png",
+    "现代控制理论/img/pixpin_2025-03-29_20-12-17.png",
     "lib/scripts/graph-wasm.wasm",
     "lib/fonts/94f2f163d4b698242fef.otf",
     "lib/fonts/72505e6a122c6acd5471.woff2",
@@ -22,7 +36,7 @@
     "lib/fonts/52ac8f3034507f1d9e53.ttf",
     "lib/fonts/05b618077343fbbd92b7.ttf",
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
-    "lib/media/874d8b8e340f75575caa.svg",
+    "lib/media/6155340132a851f6089e.svg",
     "lib/fonts/mathjax_zero.woff",
     "lib/fonts/mathjax_main-regular.woff",
     "lib/fonts/mathjax_main-bold.woff",
@@ -76,7 +90,7 @@
     "lib/fonts/52ac8f3034507f1d9e53.ttf",
     "lib/fonts/05b618077343fbbd92b7.ttf",
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
-    "lib/media/874d8b8e340f75575caa.svg",
+    "lib/media/6155340132a851f6089e.svg",
     "lib/fonts/mathjax_zero.woff",
     "lib/fonts/mathjax_main-regular.woff",
     "lib/fonts/mathjax_main-bold.woff",
@@ -116,328 +130,422 @@
     "lib/styles/main-styles.css"
   ],
   "fileInfo": {
-    "机器人学/笔记/机器人学.md": {
-      "modifiedTime": 1732704464162,
-      "sourceSize": 23603,
-      "exportedPath": "机器人学/笔记/机器人学.html",
+    "现代控制理论/过程证明.md": {
+      "modifiedTime": 1743664950193,
+      "sourceSize": 7192,
+      "exportedPath": "现代控制理论/过程证明.html",
+      "dependencies": []
+    },
+    "现代控制理论/现代控制理论.canvas": {
+      "modifiedTime": 1743664950193,
+      "sourceSize": 573,
+      "exportedPath": "现代控制理论/现代控制理论.html",
+      "dependencies": []
+    },
+    "现代控制理论/现代控制理论Chapter2.md": {
+      "modifiedTime": 1743664950193,
+      "sourceSize": 19929,
+      "exportedPath": "现代控制理论/现代控制理论chapter2.html",
       "dependencies": [
-        "机器人学/笔记/img/pasted-image-20241126113147.png"
+        "现代控制理论/img/pixpin_2025-03-28_15-39-34.png",
+        "现代控制理论/img/pixpin_2025-03-28_15-41-48.png",
+        "现代控制理论/img/pixpin_2025-03-28_16-27-50.png",
+        "现代控制理论/img/pixpin_2025-03-28_17-17-42.png",
+        "现代控制理论/img/pixpin_2025-03-28_17-46-51.png",
+        "现代控制理论/img/pixpin_2025-03-28_18-04-46.png",
+        "现代控制理论/img/pixpin_2025-03-28_18-17-48.png",
+        "现代控制理论/img/pixpin_2025-03-29_19-48-31.png",
+        "现代控制理论/img/pixpin_2025-03-29_19-52-39.png",
+        "现代控制理论/img/pixpin_2025-03-29_19-56-06.png",
+        "现代控制理论/img/pixpin_2025-03-29_20-12-17.png"
       ]
     },
-    "机器人学/笔记/img/pasted-image-20241126113147.png": {
-      "modifiedTime": 1732704464162,
-      "sourceSize": 311045,
-      "exportedPath": "机器人学/笔记/img/pasted-image-20241126113147.png",
+    "现代控制理论/现代控制理论Chapter3.md": {
+      "modifiedTime": 1743664950193,
+      "sourceSize": 6618,
+      "exportedPath": "现代控制理论/现代控制理论chapter3.html",
+      "dependencies": []
+    },
+    "现代控制理论/现控例题.md": {
+      "modifiedTime": 1743664950193,
+      "sourceSize": 7813,
+      "exportedPath": "现代控制理论/现控例题.html",
+      "dependencies": []
+    },
+    "现代控制理论/img/pixpin_2025-03-28_15-39-34.png": {
+      "modifiedTime": 1743664950193,
+      "sourceSize": 34335,
+      "exportedPath": "现代控制理论/img/pixpin_2025-03-28_15-39-34.png",
+      "dependencies": []
+    },
+    "现代控制理论/img/pixpin_2025-03-28_15-41-48.png": {
+      "modifiedTime": 1743664950193,
+      "sourceSize": 34961,
+      "exportedPath": "现代控制理论/img/pixpin_2025-03-28_15-41-48.png",
+      "dependencies": []
+    },
+    "现代控制理论/img/pixpin_2025-03-28_16-27-50.png": {
+      "modifiedTime": 1743664950193,
+      "sourceSize": 12990,
+      "exportedPath": "现代控制理论/img/pixpin_2025-03-28_16-27-50.png",
+      "dependencies": []
+    },
+    "现代控制理论/img/pixpin_2025-03-28_17-17-42.png": {
+      "modifiedTime": 1743664950193,
+      "sourceSize": 43451,
+      "exportedPath": "现代控制理论/img/pixpin_2025-03-28_17-17-42.png",
+      "dependencies": []
+    },
+    "现代控制理论/img/pixpin_2025-03-28_17-46-51.png": {
+      "modifiedTime": 1743664950193,
+      "sourceSize": 41981,
+      "exportedPath": "现代控制理论/img/pixpin_2025-03-28_17-46-51.png",
+      "dependencies": []
+    },
+    "现代控制理论/img/pixpin_2025-03-28_18-04-46.png": {
+      "modifiedTime": 1743664950193,
+      "sourceSize": 68791,
+      "exportedPath": "现代控制理论/img/pixpin_2025-03-28_18-04-46.png",
+      "dependencies": []
+    },
+    "现代控制理论/img/pixpin_2025-03-28_18-17-48.png": {
+      "modifiedTime": 1743664950193,
+      "sourceSize": 65799,
+      "exportedPath": "现代控制理论/img/pixpin_2025-03-28_18-17-48.png",
+      "dependencies": []
+    },
+    "现代控制理论/img/pixpin_2025-03-29_19-48-31.png": {
+      "modifiedTime": 1743664950193,
+      "sourceSize": 10973,
+      "exportedPath": "现代控制理论/img/pixpin_2025-03-29_19-48-31.png",
+      "dependencies": []
+    },
+    "现代控制理论/img/pixpin_2025-03-29_19-52-39.png": {
+      "modifiedTime": 1743664950193,
+      "sourceSize": 9314,
+      "exportedPath": "现代控制理论/img/pixpin_2025-03-29_19-52-39.png",
+      "dependencies": []
+    },
+    "现代控制理论/img/pixpin_2025-03-29_19-56-06.png": {
+      "modifiedTime": 1743664950193,
+      "sourceSize": 8520,
+      "exportedPath": "现代控制理论/img/pixpin_2025-03-29_19-56-06.png",
+      "dependencies": []
+    },
+    "现代控制理论/img/pixpin_2025-03-29_20-12-17.png": {
+      "modifiedTime": 1743664950193,
+      "sourceSize": 53008,
+      "exportedPath": "现代控制理论/img/pixpin_2025-03-29_20-12-17.png",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
-    "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1732704464162,
-      "sourceSize": 317,
-      "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
+    "lib/media/6155340132a851f6089e.svg": {
+      "modifiedTime": 1743664950193,
+      "sourceSize": 315,
+      "exportedPath": "lib/media/6155340132a851f6089e.svg",
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1732704464162,
-      "sourceSize": 2235,
+      "modifiedTime": 1743664950193,
+      "sourceSize": 2916,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1732704464162,
-      "sourceSize": 272,
+      "modifiedTime": 1743664950193,
+      "sourceSize": 438,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1732704464162,
-      "sourceSize": 131118,
+      "modifiedTime": 1743664950193,
+      "sourceSize": 137567,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1732704464162,
-      "sourceSize": 853897,
+      "modifiedTime": 1743664950193,
+      "sourceSize": 380145,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1732704464162,
-      "sourceSize": 236,
+      "modifiedTime": 1743664950193,
+      "sourceSize": 439,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1732704464162,
-      "sourceSize": 1676,
+      "modifiedTime": 1743664950193,
+      "sourceSize": 1546,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1732704464162,
+      "modifiedTime": 1743664950193,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
